@@ -37,7 +37,45 @@
     <section id="about" class="about">
         <h4><i>CozyCup Café</i></h4>
         <h2>About Us</h2>
-        <img src="C:\Users\johnb\OneDrive\Documents\cc6-cozycup-cafe\img\art.jpg" alt="Learn More About As">
+        
+    <div class="small-carousel">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.bJwNrpFJ1H1XLBGL5_uCAwHaE7?pid=ImgDet&w=474&h=315&rs=1&o=7&rm=3" class="active">
+    <img src="https://static.vecteezy.com/system/resources/previews/011/039/995/non_2x/cup-of-latte-coffee-on-wooden-table-free-photo.jpg">
+    <img src="https://perfectdailygrind.com/wp-content/uploads/2019/09/Low-Waste-2.png">
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+    </div>
+
+    <script>
+    const carousel = document.querySelector('.small-carousel');
+    const images = carousel.querySelectorAll('img');
+    const prevBtn = carousel.querySelector('.prev');
+    const nextBtn = carousel.querySelector('.next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+        images.forEach(img => img.classList.remove('active'));
+        images[index].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    });
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }, 3000);
+    </script>
+
+        <br>
         <H3>Discover the story behind CozyCup Café</H3>
         <br>
         <P>CozyCup Café is known as the most comfy café all over the world. We start to build on August 14, 2025.
