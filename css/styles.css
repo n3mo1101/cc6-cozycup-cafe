@@ -92,11 +92,57 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.menu-nav {
+    display: flex;
+    gap: 20px;
+    background: hsla(39, 93%, 32%, 0.836);
+    padding: 10px 20px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.menu-nav label {
+color: #000000;
+cursor: pointer;
+padding: 8px 16px;
+border-radius: 6px;
+transition: 0.2s;
+}
+
+input[name="tab"] {
+    display: none;
+}
+
+input[name="tab"]:checked + label {
+    background: #ff9800;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-nav:has(#all:checked) ~ .contents #menu-coffee,
+.menu-nav:has(#all:checked) ~ .contents #menu-dessert,
+.menu-nav:has(#all:checked) ~ .contents #menu-others {
+    display: flex;
+}
+
+.menu-nav:has(#coffee:checked) ~ .contents #menu-coffee,
+.menu-nav:has(#dessert:checked) ~ .contents #menu-dessert,
+.menu-nav:has(#others:checked) ~ .contents #menu-others {
+    display: flex;
+}
+
 .menu-items {
     align-self: center;
-    display: flex;
+    display: none;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 5px;
+}
+
+.all-items {
+    display: none;
+    width: 100%;
 }
 
 .menu-product {
@@ -125,13 +171,14 @@ nav a:hover {
 .menu-product p {
     font-size: 14px;
     text-align: left;
+    margin-bottom: 4px;
 }
 
 .menu-product .price {
     font-size: 14px;
     font-weight: bold;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 4px;
     margin-bottom: 2px;
 }
 
@@ -141,11 +188,6 @@ nav a:hover {
     box-shadow: 0px 0px 5px  hsla(39, 86%, 35%, 0.836);
 }
 
-.menu-nav {
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
 .about {
     padding: 100px 0;
     text-align: center;
@@ -207,3 +249,4 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+  
