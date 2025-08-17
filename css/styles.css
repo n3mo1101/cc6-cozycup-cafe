@@ -1,4 +1,7 @@
 /* Reset some default styles */
+*{
+    box-sizing: border-box;
+}
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -43,6 +46,10 @@ nav a:hover {
     color: #7e685b;
 }
 
+#home{
+    background-image: url(../img/pokemon-bg.jpg);
+}
+
 .hero {
     text-align: center;
     padding: 150px 0;
@@ -81,9 +88,64 @@ nav a:hover {
 
 .menu h2 {
     font-size: 30px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
+.menu-items {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-product {
+    height: auto;
+    width: 250px;
+    border: 1px solid hsl(0, 0%, 50%);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.menu-product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.menu-product h5 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu-product p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.menu-product .price {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.menu-product:hover {
+    cursor: pointer;
+    border-color: hsla(39, 86%, 35%, 0.836);
+    box-shadow: 0px 0px 5px  hsla(39, 86%, 35%, 0.836);
+}
+
+.menu-nav {
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
 .about {
     padding: 100px 0;
     text-align: center;
@@ -132,6 +194,12 @@ nav a:hover {
     text-decoration: underline;
     color: #1588e7; 
   }
+
+.icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
 
 footer {
     background-color: #4c3c32;
