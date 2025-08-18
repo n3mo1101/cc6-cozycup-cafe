@@ -32,9 +32,18 @@ CozyCup Café is known as the **most comfy café all over the world**.
 - **HTML5** – Structure  
 - **CSS3** – Styling and responsiveness
 
+---
+
 ## 📸 Screenshots  
 
 ![Full-webpage](img/sc-cozycup-full.png)
 ![Coffee-tab](img/sc-coffee-tab.jpg)
 ![Desserts-tab](img/sc-dessert-tab.png)
-![Others-tab](img/sc-others-tab.png)
+![Others-tab](img/sc-others-tab.png)  
+
+---
+
+## 📝 Authors
+
+- **Dela Cruz, Reymart**
+- **Condesa, John Brence**
