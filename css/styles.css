@@ -120,10 +120,17 @@ input[name="tab"]:checked + label {
     font-weight: bold;
 }
 
+.menu-nav:has(#all:checked) ~ .contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+
 .menu-nav:has(#all:checked) ~ .contents #menu-coffee,
 .menu-nav:has(#all:checked) ~ .contents #menu-dessert,
 .menu-nav:has(#all:checked) ~ .contents #menu-others {
-    display: flex;
+    display: contents;
 }
 
 .menu-nav:has(#coffee:checked) ~ .contents #menu-coffee,
@@ -136,8 +143,8 @@ input[name="tab"]:checked + label {
     align-self: center;
     display: none;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .all-items {
