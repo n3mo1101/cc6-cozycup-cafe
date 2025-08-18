@@ -93,7 +93,8 @@ nav a:hover {
 .menu h2 {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: -10px;
 }
 
 .menu-nav {
@@ -102,7 +103,7 @@ nav a:hover {
     background: hsla(39, 93%, 32%, 0.836);
     padding: 10px 20px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
