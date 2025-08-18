@@ -94,12 +94,17 @@ nav a:hover {
 .about {
     padding: 75px 500px;
     text-align: center;
-    background-color: #ede4d6;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/007/385/577/large_2x/flat-design-coffee-cup-and-coffee-beans-in-coffee-color-background-for-copy-space-free-vector.jpg);
+}
+
+.about h3 {
+  color: #3a2f2f;
 }
 
 .about h2 {
     font-size: 30px;
     margin-bottom: 20px;
+    color: #3a2f2f;
 }
 
 .about p {
@@ -167,6 +172,7 @@ nav a:hover {
   text-align: center;
   margin-bottom: 2rem;
   color: #444;
+}
 
   @media (max-width: 768px) {
   .about-section h1 {
